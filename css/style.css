@@ -16,7 +16,15 @@ body {
     border: 1px solid transparent;
     border-radius: 0;
 }
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
 
+.page-header h2 {
+    margin-top: 0;
+}
 
 .callout-container {
     height: 100vh;
@@ -118,6 +126,21 @@ body {
     width: 35px;
 }
 
+
+
+.content-container{
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+
+}
+
+.content-container--red{
+background-color: #f05f40;
+color: white;
+
+
+}
 /* Buttons */
 
 .btn--cta {
@@ -139,3 +162,4 @@ body {
     background-color: #df4929;
     border-color: #df4929;
     color: white;
+}

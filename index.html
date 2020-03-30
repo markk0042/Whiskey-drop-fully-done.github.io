@@ -13,7 +13,17 @@
 
 <body>
     <!--Nav-->
-    <nav class="navbar navbar-light navbar-expand-sm bg-light">
+    <div class="container-fluid navalert-container">
+     <div class="container alert-container">
+       <div class="row d-none d-sm-block">
+          <div class="col-12">
+                <div class="site-wide-alert alert alert-warning">
+                   <strong>Sale Now On!</strong> We've got a sale on. Get a 12 month subscription for the price of 6! <a href="">See here for more details</a>
+               </div>
+           </div>
+       </div>
+    </div>
+    <nav class="navbar navbar-dark navbar-expand-sm">
         <a href="/" class="navbar-brand">
                     Whiskey Drop</a>
 
@@ -41,19 +51,11 @@
         </div>
         <div class="d-none d-md-block">
             <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door</i></p>
-            <a href="/login">Sign In / Sign Up</a>
+            <a href="/login" class="btn btn--cta btn--red">Sign In / Sign Up</a>
         </div>
         <!--</div>-->
     </nav>
-    <!--<div class="container alert-container">-->
-    <!--    <div class="row d-none d-sm-block">-->
-    <!--        <div class="col-12">-->
-    <!--            <div class="alert alert-warning">-->
-    <!--                <strong>Sale Now On!</strong> We've got a sale on. Get a 12 month subscription for the price of 6! <a href="">See here for more details</a>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</div>-->
+    </div>
     <div class="container-fluid callout-container">
         <!-- Callout -->
         <div class="opaque-overlay">&nbsp;</div>
@@ -66,7 +68,7 @@
                         <s class="d-none d-sm-inline">€19.99</s>
                         <span class="d-inline d-sm-none"><br></span>
                         <strong><mark>First one is free!</mark></strong></p>
-                    <p><button class="btn btn-lg btn-success" data-toggle="modal" data-target="#signUpModal">Sign Up!</button></p>
+                    <p><button class="btn btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign Up!</button></p>
                     <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly.</small></p>
                 </section>
             </div>
@@ -76,12 +78,13 @@
     <!-- /.callout -->
 
     <!-- Quotes -->
-    <div class="container quotes-container">
+    <div class="container-wrapper">
+    <div class="container quotes-container content-container">
         <section class="quotes">
             <div class="row">
-                <div class="col-12 my-5">
+                <div class="col-12 page-header">
                     <h2 class="text-uppercase">Quotes:</h2>
-                    <hr />
+                    <hr class="block-divider block-divider--short">
                 </div>
             </div>
             <div class="row">
@@ -113,14 +116,16 @@
                 </div>
             </div>
         </section>
+     </div>
     </div>
     <!-- /.quotes -->
 
     <!-- Features -->
-    <div class="features-container">
+    <div class="container-wrapper container-wrapper--red ">
+    <div class="features-container content-container">
         <section class="features">
             <div class="row">
-                <div class="col-12 my-5">
+                <div class="col-12 page-header">
                     <h2 class="text-uppercase">Features:</h2>
                     <hr />
                 </div>
@@ -149,6 +154,7 @@
                 </div>
             </div>
         </section>
+    </div>
     </div>
     <!-- /.features -->
 
